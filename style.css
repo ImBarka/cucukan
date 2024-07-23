@@ -1,0 +1,288 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+
+
+}   
+
+
+/* navbar */
+#header{
+    position: fixed;
+    z-index: 9999;
+    width: 130%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 80px;
+    background-color: cadetblue;
+    box-shadow: 0 5px 15px rgba(0,0, 0, 0.06);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3{
+    margin-top: 80px;
+}
+.foto{
+    display: flex;
+    align-items: center;
+    padding: 15;
+    margin:0;
+}
+
+.foto2{
+    display: grid;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+#navbar{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: aliceblue;
+    transition: 0.2s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #ffffff;
+}
+
+#navbar li a.active::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    animation: slide 0.5s forwards;
+}
+
+@keyframes slide {
+    100%{
+        left: 20px; 
+    }
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    padding: 40px 0;
+}
+
+#profil{
+    height: 1000px;
+}
+
+video{
+    height: 120vh;
+    width: fit-content;
+}
+
+.konten{
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: center;
+    margin: 0;
+    background-image: url(/Cucukan/img/bg1.png);
+
+}
+
+.konten1{
+    margin: 50px;
+    display: block;
+
+}
+
+.konten1 h1{
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+color: #55ad9b;
+}
+.konten1 h2{
+    margin: 0;
+    padding: 0;
+}
+.konten1 h4{
+    margin: 0;
+    padding: 0;
+}
+
+.konten1 p{
+    margin: 0;
+    padding: 0;
+    width: 700px;
+}
+
+.konten1 .pp{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+#produk1{
+    text-align: center;
+    background-image: url('img/bgpinkhd.jpg');
+    background-repeat: no-repeat;
+}
+
+#produk1 .produk-container{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+#produk1 .produk{
+    width: 21%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0, 0, 0.04);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+    background-color: white;
+
+}
+
+#produk1 .produk:hover{
+    box-shadow: 20px 20px 30px rgba(0,0, 0, 0.08);
+    scale: 1.03;
+}
+#produk1 .produk img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#produk1 .produk .deskripsi{
+    text-align: start;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#produk1 .produk .deskripsi span{
+    color: #8e4117;
+    font-size: 12px;
+}
+
+#produk1 .produk .deskripsi{
+    padding-top: 7px;
+    color: black;
+    font-size: 14px;
+}
+
+#produk1 .produk .deskripsi h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 750;
+    color: #8e4117;
+    
+}
+
+/* footer  */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: cadetblue;
+    padding: 40px 80px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: space-around;
+    color: floralwhite;
+
+
+}
+
+footer .atas {
+    display: flex;
+    margin-bottom: -40px;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    padding-right: 170px;
+}
+
+#fsamping{
+    display: flex;  
+    flex-direction: row;
+}
+
+footer .logo{
+    margin-bottom: 15px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 0px;
+    margin: 0 0 10px 0;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 12px;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+}
+
+footer i {
+    padding-right: 15px;
+}
+
+footer .bawah {
+    height: 10px;
+    margin-top: 50px;
+    margin-bottom: -10px;
+    
+    display: flex;
+    justify-content: center;
+}
+
