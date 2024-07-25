@@ -26,7 +26,7 @@
                 <li><a href="index.html">Beranda</a></li>
                 <li><a href="profil.html">Profil</a></li>
                 <li><a href="#infografis">Infografis</a></li>
-                <li><a class=active href="">Usaha Desa</a></li>
+                <li><a class="active" href="">Usaha Desa</a></li>
                 <li><a href="#tentang">Tentang</a></li>
                 <!-- <i id="close" class="fas fa-times"></i> -->
               </ul>
@@ -43,7 +43,7 @@
                 
               </h3>
               <div class="produk-container">
-                  <div class="produk" onclick="orderProduct('Produk 1')">
+                  <div class="produk" onclick="orderProduct('usda/ppko_produk1.html')">
                       <img src="img/LOGO TIM PPKO.png" alt="Produk 1">
                       <div class="deskripsi">
                           <span>Kategori 1</span>
@@ -51,7 +51,7 @@
                           <h4>Rp 100,000</h4>
                       </div>
                   </div>
-                  <div class="produk" onclick="orderProduct('Produk 2')">
+                  <div class="produk" onclick="orderProduct('usda/ppko_produk2.html')">
                       <img src="img/LOGO POLOS.png" alt="Produk 2">
                       <div class="deskripsi">
                           <span>Kategori 2</span>
@@ -59,7 +59,7 @@
                           <h4>Rp 150,000</h4>
                       </div>
                   </div>
-                  <div class="produk" onclick="orderProduct('Produk 3')">
+                  <div class="produk" onclick="orderProduct('usda/ppko_produk3.html')">
                       <img src="img/LOGO POLOS.png" alt="Produk 3">
                       <div class="deskripsi">
                           <span>Kategori 3</span>
@@ -67,7 +67,7 @@
                           <h4>Rp 200,000</h4>
                       </div>
                   </div>
-                  <div class="produk" onclick="orderProduct('Produk 4')">
+                  <div class="produk" onclick="orderProduct('usda/ppko_produk4.html')">
                     <img src="img/LOGO POLOS.png" alt="Produk 4">
                     <div class="deskripsi">
                         <span>Kategori 4</span>
@@ -138,9 +138,8 @@
         </div>
       </footer>
     <script>
-      function orderProduct(productName) {
-        var msg = encodeURIComponent("Halo, saya tertarik dengan " + productName + ". Bisakah saya memesan produk tersebut?");
-        window.location.href = "https://api.whatsapp.com/send/?phone=6289698916655&text=" + msg;
+      function orderProduct(productPage) {
+        window.location.href = productPage;
       }
     </script>
 </body>

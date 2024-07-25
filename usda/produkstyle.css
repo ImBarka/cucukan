@@ -1,0 +1,87 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+
+
+}   
+
+.konten{
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: center;
+    margin: 0;
+    background-image: url(/img/bg3.png);
+    height: 100vh;
+    width: 100%;
+
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: cadetblue;
+    padding: 40px 80px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: space-around;
+    color: floralwhite;
+
+
+}
+
+footer .atas {
+    display: flex;
+    margin-bottom: -40px;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    padding-right: 170px;
+}
+
+#fsamping{
+    display: flex;  
+    flex-direction: row;
+}
+
+footer .logo{
+    margin-bottom: 15px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 0px;
+    margin: 0 0 10px 0;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 12px;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+}
+
+footer i {
+    padding-right: 15px;
+}
+
+footer .bawah {
+    height: 10px;
+    margin-top: 50px;
+    margin-bottom: -10px;
+    
+    display: flex;
+    justify-content: center;
+}
