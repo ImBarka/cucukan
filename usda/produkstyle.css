@@ -8,15 +8,33 @@ body{
 
 .konten{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 0;
     background-image: url(/img/bg3.png);
     height: 100vh;
     width: 100%;
 
+}
+
+.close1{
+    width: auto;
+    height: auto;
+}
+i{
+    padding-bottom: 30px;
+}
+.konten h1{
+    margin-bottom: 20px;
+}
+.konten .box{
+    background-color: #fb0505;
+    width: 90%;
+    height: 80%;
 }
 footer{
     display: flex;
